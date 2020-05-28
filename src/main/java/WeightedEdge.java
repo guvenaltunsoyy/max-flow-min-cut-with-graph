@@ -17,9 +17,15 @@ public class WeightedEdge {
     public String getStartVertexId(){
         return Start.getId();
     }
+    public int getStartVertexIntId(){
+        return Start.getIntId();
+    }
 
     public String getEndVertexId(){
         return End.getId();
+    }
+    public int getEndVertexIntId(){
+        return End.getIntId();
     }
     public void setStart(Vertex start) {
         Start = start;

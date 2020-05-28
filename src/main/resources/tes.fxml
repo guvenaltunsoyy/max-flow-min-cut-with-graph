@@ -4,39 +4,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="myGrid"
-        prefHeight="600.0"
-        prefWidth="600.0"
-        xmlns="http://javafx.com/javafx/10.0.2-internal"
-        xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMaven">
+<GridPane fx:id="myGrid" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMaven">
     <Text text="Hosgeldiniz" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
-    <Label text="Musluk Adedi Giriniz"
-           GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField fx:id="tfNodeCount" GridPane.columnIndex="0" GridPane.rowIndex="1" promptText="Musluk Adedi" />
-    <Button fx:id="btnSayHello"
-            onAction="#sayHelloWorld"
-            text="Olustur"
-            BorderPane.alignment="CENTER"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="3" />
-    <Button fx:id="btnClearGraph"
-            onAction="#clearGraph"
-            text="Temizle"
-            BorderPane.alignment="CENTER"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="4" />
-    <Label text="Iliskilendirmek istediginiz nodelarin isimlerini giriniz"
-           GridPane.columnIndex="0" GridPane.rowIndex="5" />
-    <TextField fx:id="tfFirstNodeId" GridPane.columnIndex="0" GridPane.rowIndex="6" promptText="1.Dugum adi"  />
-    <TextField fx:id="tfSecondNodeId" GridPane.columnIndex="1" GridPane.rowIndex="6" promptText="2.Dugum adi"  />
-    <TextField fx:id="tfWeight" GridPane.columnIndex="0" GridPane.rowIndex="7" promptText="Agirlik"  />
-    <Button fx:id="btnConnect"
-            onAction="#connectNode"
-            text="Bagla"
-            BorderPane.alignment="CENTER"
-            GridPane.columnIndex="0"
-            GridPane.rowIndex="8" />
+    <Label text="Musluk Adedi Giriniz" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="tfNodeCount" promptText="Musluk Adedi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button fx:id="btnSayHello" onAction="#sayHelloWorld" text="Olustur" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button fx:id="btnClearGraph" onAction="#clearGraph" text="Temizle" BorderPane.alignment="CENTER" GridPane.rowIndex="3" />
+    <Label text="Iliskilendirmek istediginiz nodelarin isimlerini giriniz" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField fx:id="tfFirstNodeId" promptText="1.Dugum adi" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TextField fx:id="tfSecondNodeId" promptText="2.Dugum adi" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <TextField fx:id="tfWeight" promptText="Agirlik" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Button fx:id="btnConnect" onAction="#connectNode" text="Bagla" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <Button fx:id="bntDrawGraph" contentDisplay="CENTER" onAction="#DrawGraph" text="Grafi Yenile" textAlignment="CENTER" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+   <Button fx:id="btnMaxFlow" mnemonicParsing="false" onAction="#findMaxFlow" text="Max Flow" GridPane.rowIndex="12" />
+   <TextField fx:id="tfSource" promptText="Baslangic Muslugu" GridPane.rowIndex="11" />
+   <TextField fx:id="tfTarget" promptText="Hedef Musluk" GridPane.columnIndex="1" GridPane.rowIndex="11" />
     <columnConstraints>
+      <ColumnConstraints />
       <ColumnConstraints />
       <ColumnConstraints />
    </columnConstraints>
@@ -48,6 +32,12 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
    </rowConstraints>
 
 </GridPane>
