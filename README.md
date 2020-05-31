@@ -30,17 +30,17 @@ olarak bunu göstermeniz beklenmektedir.
 kenar tespiti yapılacaktır. Kesilmesi gereken kenarların hangi noktalar arasında olduğu da
 yazılmalıdır.
 
-İsterler doğrultusunda oluşturulan ekran;
+###İsterler doğrultusunda oluşturulan ekran;
 ![Homapage](homepage.png)
 
-Kullanıcıdan ilk etapta musluk sayısı istenmekte bu bu musluk sayısına göre dinamik bir graf oluşturulur.
-Ardından kullanıcı hangi muslukları/düğümleri birbirine bağlamak istiyorsa 1 ve 2 dugum adı alanlarına girerek ağırlık değeri vermesi gerekmektedir.
+####Kullanıcıdan ilk etapta musluk sayısı istenmekte bu bu musluk sayısına göre dinamik bir graf oluşturulur.
+####Ardından kullanıcı hangi muslukları/düğümleri birbirine bağlamak istiyorsa 1 ve 2 dugum adı alanlarına girerek ağırlık değeri vermesi gerekmektedir.
 
-Girilen değerler sonucu oluşan graf yapısı;
+###Girilen değerler sonucu oluşan graf yapısı;
 ![Graph](create-graph.png)
 
-Grafımız oluştuktan sonra kullanıcının başlangıç ve hedef düğümü girip Max Flow - Min Cut butonuna basması gerekmektedir.
-Sonuçlar ekranda görülecektir;
+####Grafımız oluştuktan sonra kullanıcının başlangıç ve hedef düğümü girip Max Flow - Min Cut butonuna basması gerekmektedir.
+###Sonuçlar ekranda görülecektir;
 ![ResultHome](result-homepage.png)
 ![ResultGraph](result-graph.png)
 ![ResultScreen](result-screen.png)
