@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -16,9 +17,12 @@
     <TextField fx:id="tfWeight" promptText="Agirlik" GridPane.columnIndex="0" GridPane.rowIndex="7" />
     <Button fx:id="btnConnect" onAction="#connectNode" text="Bagla" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
     <Button fx:id="bntDrawGraph" contentDisplay="CENTER" onAction="#DrawGraph" text="Grafi Yenile" textAlignment="CENTER" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" />
-   <Button fx:id="btnMaxFlow" mnemonicParsing="false" onAction="#findMaxFlow" text="Max Flow" GridPane.rowIndex="12" />
+   <Button fx:id="btnMaxFlow" mnemonicParsing="false" onAction="#findMaxFlow" text="Max Flow - Min Cut" GridPane.rowIndex="12" />
    <TextField fx:id="tfSource" promptText="Baslangic Muslugu" GridPane.rowIndex="11" />
    <TextField fx:id="tfTarget" promptText="Hedef Musluk" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+   <Label text="Musluktan havuza su akmaması için kesilmesi gereken kenarlar" GridPane.rowIndex="13" />
+   <Label fx:id="lbResult" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+   <Label fx:id="lbMaxFlow" text="Max Flow" GridPane.columnIndex="1" GridPane.rowIndex="12" />
     <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -38,6 +42,11 @@
       <RowConstraints />
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
    </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
 
 </GridPane>
