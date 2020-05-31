@@ -9,7 +9,7 @@
     <Text text="Hosgeldiniz" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
     <Label text="Musluk Adedi Giriniz" GridPane.columnIndex="0" GridPane.rowIndex="1" />
     <TextField fx:id="tfNodeCount" promptText="Musluk Adedi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-    <Button fx:id="btnSayHello" onAction="#sayHelloWorld" text="Olustur" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button fx:id="btnCreateGraph" onAction="#createGraphClick" text="Olustur" BorderPane.alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
     <Button fx:id="btnClearGraph" onAction="#clearGraph" text="Temizle" BorderPane.alignment="CENTER" GridPane.rowIndex="3" />
     <Label text="Iliskilendirmek istediginiz nodelarin isimlerini giriniz" GridPane.columnIndex="0" GridPane.rowIndex="5" />
     <TextField fx:id="tfFirstNodeId" promptText="1.Dugum adi" GridPane.columnIndex="0" GridPane.rowIndex="6" />

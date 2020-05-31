@@ -22,8 +22,6 @@ import org.graphstream.graph.implementations.*;
 
 public class FXMaven extends Application {
     @FXML
-    Button btnSayHello;
-    @FXML
     TextField tfNodeCount;
     @FXML
     TextField tfFirstNodeId;
@@ -62,7 +60,7 @@ public class FXMaven extends Application {
         stage.show();
     }
 
-    public void sayHelloWorld(ActionEvent actionEvent) {
+    public void createGraphClick(ActionEvent actionEvent) {
         System.out.println(tfNodeCount.getText());
         CreateGraph(Integer.parseInt(tfNodeCount.getText()));
     }
