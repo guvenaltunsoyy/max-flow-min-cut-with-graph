@@ -16,11 +16,11 @@ olarak verilmiştir) azami miktarda akış sağlayabilmektir.
 1. İsterler
 Arayüz üzerinden kullanıcıdan,
 
-● Musluk sayısı (node/düğüm),
+* Musluk sayısı (node/düğüm),
 
-● Musluk arasında bağlantı bilgisini veren boru hattı (edge/kenar)
+* Musluk arasında bağlantı bilgisini veren boru hattı (edge/kenar)
 
-● Ve boru hatlarının kapasiteleri alınacaktır.
+* Ve boru hatlarının kapasiteleri alınacaktır.
 Alınan bilgilere göre bir graf yapısı dinamik olarak gösteren bir arayüz hazırlamanız beklenmektedir.
 Projenizin çalışma adımları:
 1. Kullanıcı havuzu doldurmaya başlayacak olan, başlangıç düğümünü seçecektir.
@@ -29,6 +29,10 @@ olarak bunu göstermeniz beklenmektedir.
 3. Daha sonraki aşamada ise musluktan havuza su akmaması için kesilmesi gereken en az sayıda
 kenar tespiti yapılacaktır. Kesilmesi gereken kenarların hangi noktalar arasında olduğu da
 yazılmalıdır.
+
+### Gereklilikler
+* Projemiz java dilinde yazılıp, arayüz için javafx kullanılmıştır. [Javafx](https://gluonhq.com/products/javafx/) gerekli sürümü indirildikten sonra projeye dahil edilmesi gerekmektedir. [IntellıJ IDEA için gerekli ayarlar](https://www.jetbrains.com/help/idea/javafx.html)
+* Graf çizimi için [GraphStrem](http://graphstream-project.org/) kullanılmıştır. [Buradan](http://graphstream-project.org/download/) indirilecek 3 dosya içerisinde ki jar dosyaları projeye eklenmelidir.
 
 ### İsterler doğrultusunda oluşturulan ekran;
 ![Homapage](homepage.png)
@@ -44,3 +48,11 @@ yazılmalıdır.
 ![ResultHome](result-homepage.png)
 ![ResultGraph](result-graph.png)
 ![ResultScreen](result-screen.png)
+
+
+### Kaynaklar
+
+#### [Ford-Fulkerson Algorithm for Maximum Flow Problem](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)
+#### [Find minimum s-t cut in a flow network](https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/)
+#### [GraphStream](http://graphstream-project.org/)
+#### [JavaFx](https://gluonhq.com/products/javafx/)
